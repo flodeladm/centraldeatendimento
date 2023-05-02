@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Link que distribui cliques para 2 destinos</title>
+</head>
+<body>
+	<a href="#" onclick="redirecionarParaDestino()">Clique aqui</a>
+
+	<script>
+		function redirecionarParaDestino() {
+		  // Define as URLs dos dois destinos
+		  var urlDestino1 = "https://bit.ly/centralflo01";
+		  var urlDestino2 = "https://bit.ly/centralflo02";
+
+		  // Gera um número aleatório entre 0 e 1
+		  var aleatorio = Math.floor(Math.random() * 2);
+
+		  // Redireciona o usuário para um dos dois destinos aleatoriamente
+		  if (aleatorio === 0) {
+		    window.location.href = urlDestino1;
+		  } else {
+		    window.location.href = urlDestino2;
+		  }
+		}
+	</script>
+</body>
+</html>
